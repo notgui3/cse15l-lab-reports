@@ -48,8 +48,8 @@ class StringServer {
 
 //Code end
 
-![Image](stringserver ss 1.jpg)
-![Image](stringserver ss 2.jpg)
+![Image](stringserver-ss-1.jpg)
+![Image](stringserver-ss-2.jpg)
 
 
 
