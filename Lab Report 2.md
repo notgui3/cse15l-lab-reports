@@ -80,4 +80,4 @@ After this request, the only permanent changes after initialization and declarat
 <br>
 
 # **Part 3** <br>
-- Before weeks 2 and 3, I didn't know how to set up local servers with the code I was writing in VSCode. After weeks 2 and 3, I now know about the localhost with the server node and numbers, how to compile and set up a server with Server.java, and how to code functions that can show the changes done on a server using the URL as an argument for what kind of request.
+- Before weeks 2 and 3, I didn't know what were local servers and how to set them up with the code I was writing in VSCode. After weeks 2 and 3, I now know about the localhost with the server node numbers, how to compile and set up a server with Server.java, how to code classes and functions that can be used to set up functionality for a server and update the server and its local website using the URL as a method to receive requests.
