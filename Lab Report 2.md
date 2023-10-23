@@ -1,5 +1,6 @@
 # **Part 1** <br>
 
+Code adapted from: https://github.com/ucsd-cse15l-f23/wavelet/blob/main/NumberServer.java
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -61,11 +62,18 @@ After this request, the only permanent changes after initialization and declarat
 - The relevant argument for the main method is String[] args which gets the port number for the server. The relevant field in the StringServer class is port which is an int that holds the port number extracted from args. <br>
 - The relevant argument for handleRequest is the URL and in this case, it is http://localhost:3000/add-message?s=Is this working correctly, it also auto resolved to http://localhost:3000/add-message?s=Is%20this%20working%20correctly? in the URL. The relevant fields in the Handler class are serverString, a string that holds the string output for the server, stringNum, an int that keeps count of the number of strings added for listing, and addingString, a string that holds the processed string that needs to be added to update serverString. There is also a string array named parameters which holds the initial string from the URL that needs to be added and the query string.<br>
 - After this request, the permanent changes are serverString changing to "1. Hello 2. Is this working correctly?" (imagine 1. and 2. on separate lines) from "1. Hello" and stringNum changing to 2 from 1. There are temporary changes to addingString and parameters until the next add-message request. In this case, addingString changes by declaring to \n + "2. Is this working correctly?", and parameters changes by being declared to ["s", "Is this working correctly?"]. There are no changes to port because we didn't change servers and stayed on the 3000 server node, meaning port's number is still 3000.   <br>
+<br>
  
 
 
 # **Part 2**<br>
+![Image](privKeyLoc.jpg) <br>
+- Path is /c/Users/guiya/.ssh/known_hosts <br>
+![Image](pubKeyLoc.jpg) <br>
+- Path is /home/linux/ieng6/cs15lfa23/cs15lfa23hi/.ssh/authorized_keys
+![Image](sshKeyLogin.jpg) <br>
 
+<br>
 
-
-# **Part 3**
+# **Part 3** <br>
+- Before weeks 2 and 3, I didn't know how to set up local servers with the code I was writing in VSCode. After weeks 2 and 3, I now know about the localhost with the server node and numbers, how to compile and set up a server with Server.java, and how to code functions that can show the changes done on a server using the URL as an argument for what kind of request.
