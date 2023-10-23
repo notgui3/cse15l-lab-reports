@@ -50,8 +50,8 @@ class StringServer {
 ```
 
 
-![Image](stringserver ss 1.jpg)
-![Image](stringserver ss 2.jpg)
+![Image](stringserver1.jpg) <br>
+![Image](stringserver2.jpg) <br>
  
 
 
