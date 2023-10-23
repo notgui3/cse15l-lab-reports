@@ -1,6 +1,5 @@
 # **Part 1** <br>
 
-//ServerString Code Start
 import java.io.IOException;
 import java.net.URI;
 
@@ -45,8 +44,6 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-
-//Code end
 
 ![Image](stringserver-ss-1.jpg)
 ![Image](stringserver-ss-2.jpg)
