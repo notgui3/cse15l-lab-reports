@@ -1,5 +1,6 @@
 # **Part 1** <br>
 
+```
 import java.io.IOException;
 import java.net.URI;
 
@@ -46,11 +47,12 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
+```
 
 
-![Image](stringserverss1.jpg)
-![Image](stringserverss2.jpg)
-
+![Image](stringserver ss 1.jpg)
+![Image](stringserver ss 2.jpg)
+ 
 
 
 # **Part 2**<br>
