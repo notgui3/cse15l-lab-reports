@@ -1,3 +1,5 @@
+# **CSE 15L Lab Report 2** 
+
 # **Part 1** <br>
 
 Code adapted from: https://github.com/ucsd-cse15l-f23/wavelet/blob/main/NumberServer.java <br>
