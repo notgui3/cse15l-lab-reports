@@ -48,8 +48,8 @@ class StringServer {
     }
 }
 ```
-
 <br>
+
 ![Image](stringserver1.jpg) <br>
 - When using /add-message?s=Hello, the main method and the handleRequest method is called. <br>
 - The relevant argument for the main method is String[] args which gets the port number for the server. The relevant field in the StringServer class is port which is an int that holds the port number extracted from args. <br>
