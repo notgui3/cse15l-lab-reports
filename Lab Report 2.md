@@ -69,11 +69,11 @@ After this request, the only permanent changes after initialization and declarat
 
 
 # **Part 2**<br>
-![Image](privKeyLoc.jpg) <br>
+![Image](privKeyLoc.png) <br>
 - Path is /c/Users/guiya/.ssh/known_hosts <br>
-![Image](pubKeyLoc.jpg) <br>
+![Image](pubKeyLoc.png) <br>
 - Path is /home/linux/ieng6/cs15lfa23/cs15lfa23hi/.ssh/authorized_keys
-![Image](sshKeyLogin.jpg) <br>
+![Image](sshKeyLogin.png) <br>
 
 <br>
 
