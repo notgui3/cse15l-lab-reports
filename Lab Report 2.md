@@ -1,6 +1,8 @@
 # **Part 1** <br>
 
-Code adapted from: https://github.com/ucsd-cse15l-f23/wavelet/blob/main/NumberServer.java
+Code adapted from: https://github.com/ucsd-cse15l-f23/wavelet/blob/main/NumberServer.java <br>
+
+
 ```
 import java.io.IOException;
 import java.net.URI;
