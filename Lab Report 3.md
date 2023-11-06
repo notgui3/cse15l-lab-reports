@@ -2,7 +2,7 @@
 
 # **Part 1 - Bugs** <br>
 I will be writing about the bug in the ```reversed``` method within ```ArrayExamples``` <br>
-
+<br>
 
 ```
 // Returns a *new* array with all the elements of the input array in reversed
@@ -49,12 +49,39 @@ public class ArrayTests {
 }
 
 ```
-<br>
 My failure-inducing JUnit test input was the array {1,2,3} which expected {3,2,1}, but did not get the expected value from the test. <br>
 My non-failure-inducing JUnit test input was {}, which expected {}, and the test passed the test matched the expected. <br>
 
 ![Image](failSuccess.jpg) <br>
-These are the symptoms for the two tests, ```testReversedFail``` with the {1,2,3} input failed and ```testReversedSuccess``` did not fail with an input of {}.
+These are the symptoms for the two tests, ```testReversedFail``` with the {1,2,3} input failed and ```testReversedSuccess``` did not fail with an input of {}. <br>
+```
+// Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+
+```
+<br>
+
+```
+// Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+The top is the original ```reversed``` method and the bottom has had its bug fixed. 
+
+
 
 
 
