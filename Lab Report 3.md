@@ -275,6 +275,7 @@ The -c command option for grep prints out the number of times the given string i
 <br>
 <br>
 -w for grep <br>
+
 ```
 Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
 $ grep -w "stem cell" ./technical/plos/journal.pbio.0020116.txt
