@@ -2,7 +2,7 @@
 
 # **Part 1 - Bugs** <br>
 I will be writing about the bug in the ```reversed``` method within ```ArrayExamples``` <br>
-![Image](failInput.jpg) <br>
+
 
 ```
 // Returns a *new* array with all the elements of the input array in reversed
@@ -33,14 +33,29 @@ public class ArrayTests {
 */
 
   @Test
-  public void testReversed() {
+  public void testReversedFail() {
     int[] input1 = { 1, 2, 3  };
     assertArrayEquals(new int[]{3,2,1 }, ArrayExamples.reversed(input1));
+    
+  }
+
+  @Test
+  public void testReversedSuccess() {
+    
+    int[] input2 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input2));
+    
   }
 }
+
 ```
 <br>
-My failure-inducing input was the array {1,2,3} into the JUnit test which expected {3,2,1}, but did not get the expected value from the test.
+My failure-inducing JUnit test input was the array {1,2,3} which expected {3,2,1}, but did not get the expected value from the test. <br>
+My non-failure-inducing JUnit test input was {}, which expected {}, and the test passed the test matched the expected. <br>
+
+![Image](failSuccess.jpg) <br>
+These are the symptoms for the two tests, ```testReversedFail``` with the {1,2,3} input failed and ```testReversedSuccess``` did not fail with an input of {}.
+
 
 
 
