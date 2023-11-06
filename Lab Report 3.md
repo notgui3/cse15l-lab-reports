@@ -1,9 +1,7 @@
 # **CSE 15L Lab Report 2** 
 
 # **Part 1 - Bugs** <br>
-
-<br>
-I will be writing about the bug in the ```reversed``` method within ```ArrayExamples```. <br>
+I will be writing about the bug in the ```reversed``` method within ```ArrayExamples``` <br>
 ![Image](failInput.jpg) <br>
 
 ```
