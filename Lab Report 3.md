@@ -2,10 +2,6 @@
 
 # **Part 1 - Bugs** <br>
 
-
-
-
-# **Part 2 - Researching Commands** <br>
 <br>
 I will be writing about the bug in the ```reversed``` method within ```ArrayExamples```. <br>
 ![Image](failInput.jpg) <br>
@@ -34,3 +30,7 @@ public class ArrayTests {
 ```
 <br>
 My failure-inducing input was the array {1,2,3} into the JUnit test which expected {3,2,1}, but did not get the expected value from the test.
+
+
+
+# **Part 2 - Researching Commands** <br>
