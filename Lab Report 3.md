@@ -8,7 +8,7 @@
 # **Part 2 - Researching Commands** <br>
 <br>
 I will be writing about the bug in the ```reversed``` method within ```ArrayExamples```. <br>
-![Image]{failInput.jpg}
+![Image](failInput.jpg)
 
 ```
 import static org.junit.Assert.*;
