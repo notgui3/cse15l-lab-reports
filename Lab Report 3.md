@@ -82,7 +82,8 @@ These are the symptoms for the two tests, ```testReversedFail``` with the {1,2,3
 The top is the original ```reversed``` method and the bottom has had its bug fixed. To fix the method I changed the line ```arr[i] = newArray[arr.length - i - 1];``` and ```return arr``` from the original to ```newArray[i] = arr[arr.length - i - 1];``` and ```return newArray``` to fix the bug. This was causing a bug because if you analyze the method, what we want to do is to create an array called newArray and put the elements from arr into newArray in reversed order and return newArray. However, the original code by putting ```arr[i] = newArray[arr.length - i - 1];``` and ```return arr``` was setting arr to elements within newArray then returning arr, causing the failure in the {1,2,3} input as it was putting the elements in newArray, which was empty, into arr, making arr empty and not returning the expected array. This also explains why {} as an input did not cause a failure because newArray was empty and its elements were replacing the elements within arr, causing it to be an empty array being returned and matching the expected. This change to ```newArray[i] = arr[arr.length - i - 1];``` and ```return newArray``` fixes the method because now it matches what it is supposed to do, which is to put the elements from arr into newArray in reversed order, then return newArray.
 
 <br>
-
+<br>
+<br>
 
 
 # **Part 2 - Researching Commands** <br>
@@ -224,6 +225,8 @@ $ grep -n "ADHD" technical/biomed/1471-244X-2-9.txt
 
 The -n command line option for grep takes in a string and finds all of the lines that contain that string within a file and prints the line out along with the line number, which can be very useful for things like indexing words.
 <br>
+<br>
+<br>
 
 -i for grep <br>
 ```
@@ -247,6 +250,8 @@ $ grep -i "American" ./technical/911report/chapter-5.txt
 ```
 The -i command option for grep allows you to search with case insensitivity for a given string in a file which is useful for a general search when you don't exactly know what you need.
 <br>
+<br>
+<br>
 
 
 -c for grep <br>
@@ -264,8 +269,8 @@ $ grep -c "money" ./technical/government/Gen_Account_Office/ai00134.txt
 The -c command option for grep prints out the number of times the given string is found in a file which is useful for general data logging and can give you an idea of what the file is about.
 
 <br>
-
-
+<br>
+<br>
 -w for grep <br>
 ```
 Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
