@@ -88,8 +88,10 @@ The top is the original ```reversed``` method and the bottom has had its bug fix
 
 # **Part 2 - Researching Commands** <br>
 All command options found from [https://www.geeksforgeeks.org/grep-command-in-unixlinux/#](https://www.geeksforgeeks.org/grep-command-in-unixlinux/#) <br>
-grep <br>
--n for grep. <br>
+I chose grep. <br>
+<br>
+<br>
+-n for grep <br>
 ```
 Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
 $ grep -n "BMI" technical/biomed/1468-6708-3-1.txt                                               
