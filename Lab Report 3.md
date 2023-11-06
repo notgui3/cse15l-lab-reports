@@ -221,16 +221,77 @@ $ grep -n "ADHD" technical/biomed/1471-244X-2-9.txt
 518:        that comorbid ADHD increases the health risks of obesity,
 520:        adds burden to the profound impairments common in ADHD. The
 ```
+
+The -n command line option for grep takes in a string and finds all of the lines that contain that string within a file and prints the line out along with the line number, which can be very useful for things like indexing words.
 <br>
 
--i <br>
+-i for grep <br>
+```
+Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
+$ grep -i "george" ./technical/911report/chapter-1.txt
+    Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millions of men and women readied themselves for work. Some made their way to the Twin Towers, the signature structures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Pentagon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylvania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush went for an early morning run.
+    while the children continued reading. He then returned to a holding room shortly before 9:15, where he was briefed by staff and saw television coverage. He next spoke to Vice President Cheney, Dr. Rice, New York Governor George Pataki, and FBI Director Robert Mueller. He decided to make a brief statement from the school before leaving for the airport. The Secret Service told us they were anxious to move the President to a safer location, but did not think it imperative for him to run out the door.
+```
+
+```
+Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
+$ grep -i "American" ./technical/911report/chapter-5.txt
+            AL QAEDA AIMS AT THE AMERICAN HOMELAND
+                but his involvement with al Qaeda appears to have inspired him to pursue American
+                group to join him in a "jihad against the Americans." Although all were urged to
+                November 2001 by an American air strike in Afghanistan.
+                he collected Western aviation magazines; telephone directories for American cities
+                anti-American opinions, ranging from condemnations of what he described as a global
+                Saddam Hussein was an American stooge set up to give Washington an excuse to
+                sessions at their Marienstrasse apartment that involved extremely anti-American
+```
+The -i command option for grep allows you to search with case insensitivity for a given string in a file which is useful for a general search when you don't exactly know what you need.
+<br>
+
+
+-c for grep <br>
+```
+Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
+$ grep -c "abuse" ./technical/government/Alcohol_Problems/Session2-PDF.txt
+18
+```
+
+```
+Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
+$ grep -c "money" ./technical/government/Gen_Account_Office/ai00134.txt
+1
+```
+The -c command option for grep prints out the number of times the given string is found in a file which is useful for general data logging and can give you an idea of what the file is about.
 
 <br>
 
 
--c <br>
+-w for grep <br>
+```
+Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
+$ grep -w "stem cell" ./technical/plos/journal.pbio.0020116.txt
+        use of human embryonic stem cell research and somatic cell nuclear transfer techniques were
+        “youth,” research into aging, including stem cell research, is predominantly to serve
+        proportion of the experiments. Research on some of the reported adult stem cell
+        cautioned that this has not been done for most adult stem cell preparations, and, even if
+        properties of cells differentiated from adult stem cell preparations are to date
+        more differentiated cells that can be derived from them—with other stem cell sources, such
+        as the well-characterized hematopoietic stem cells, and with human embryonic stem cell
+```
 
-<br>
+```
+Gui@DESKTOP-AGQV64K MINGW64 ~/Documents/GitHub/docsearch (main)
+$ grep -w "mRNA" ./technical/plos/journal.pbio.0020133.txt
+        complex and the nature of the target sequence, the outcome can be either mRNA degradation,
+        RNA interference (RNAi), in which dsRNA triggers sequence-specific mRNA degradation. The
+        that are recognized today. In one type, silencing results from a block in mRNA synthesis
+        (transcriptional gene silencing [TGS]); in the second type, silencing results from mRNA
+        complementary mRNA of a plant gene, preventing its translation into protein. Although the
+        control ‘sense’ transgene RNAs are unable to basepair to mRNA and hence should not induce
+        and transgene mRNA (Lindbo et al. 1993). In addition to forging a link between RNA virus
+        interfering'RNAs (siRNAs), derived from cutting longer dsRNA, can guide mRNA cleavage
+        complex), a nuclease that associates with small RNAs and executes target mRNA cleavage
+```
+The -w command option for grep makes it so that it only prints out the line that matches the whole string, nothing more or less, in the given file. For example, if we search for "ball", lines with "football" or "balls" would not print, only lines with just "ball", and this is very useful for a focused search for a word or phrase so that you don't have to sift through junk matches with other commands.
 
 
--w <br>
