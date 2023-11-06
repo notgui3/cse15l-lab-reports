@@ -1,4 +1,4 @@
-# **CSE 15L Lab Report 2** 
+# **CSE 15L Lab Report 3** 
 
 # **Part 1 - Bugs** <br>
 I will be writing about the bug in the ```reversed``` method within ```ArrayExamples``` <br>
@@ -87,6 +87,7 @@ The top is the original ```reversed``` method and the bottom has had its bug fix
 
 
 # **Part 2 - Researching Commands** <br>
+All command options found from [https://www.geeksforgeeks.org/grep-command-in-unixlinux/#](https://www.geeksforgeeks.org/grep-command-in-unixlinux/#) <br>
 grep <br>
 -n for grep. <br>
 ```
