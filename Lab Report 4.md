@@ -13,7 +13,6 @@ Step 4. "ssh cs15lfa23hi@ieng6.ucsd.edu" + ```<enter>``` <br>
 
 
 Step 5. "git clone" + ```<ctrl + v>``` + ```<enter>``` <br>
-
 <br>
     I had already pre-copied the ssh url of my lab7 repository, so I just needed to type git clone then paste the ssh url in with ```<ctrl + v>```.
 
