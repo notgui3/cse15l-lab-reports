@@ -9,7 +9,7 @@
 7. "vim ListExamples.java" + <enter> + hold <down> + hold <right> + <i> + <backspace> + "2" + <escape> + ":wq" + <enter>
     Here I vim into ListExamples, then held <down> to get the buggy line of code, and then held <right> to get to the exact part that was buggy in that line. I then pressed <i> to start inserting.
     I pressed <backspace> and 2 to replace the 1 to a 2, making index1 go to index2. I pressed <escape> to go back to normal mode and type ":wq" to save and exit.
-8. <up> + <up> + <enter>
+8. <up>  <up>  <enter>
     The "bash test.sh" command was 2 up in the history so I pressed up twice and press <enter> to run the tests again.
     
 9. "git add ListExamples.java" + <enter> + "git commit" + <I> + "bug fix" + <escape> + ":wq" + "git push" + <enter>
