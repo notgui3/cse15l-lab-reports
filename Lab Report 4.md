@@ -1,5 +1,6 @@
 # **CSE 15L Lab Report 4** 
 
+```
 4. "ssh cs15lfa23hi@ieng6.ucsd.edu" + <enter>
     I typed the ssh command with my login and pressed enter to get into ieng6.
 5. "git clone" + <ctrl + v> + <enter>
@@ -15,6 +16,8 @@
 9. "git add ListExamples.java" + <enter> + "git commit" + <I> + "bug fix" + <escape> + ":wq" + "git push" + <enter>
     I git add ListExamples.java to add it to the files that will be updated. Then put in "git commit" and press <i> to edit it with "bug fix", and then press <escape> to get to normal mode and type ":wq" to save and quit.
     Then I typed "git push" and pressed <enter> to push my update of ListExamples.java.
+
+```
 
 
 
