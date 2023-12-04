@@ -108,7 +108,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 <br>
 
-In the lib folder, it should have these two jar files: hamcrest-core-1.3.jar and junit-4.13.2.jar
+In the lib folder, it should have these two jar files: ```hamcrest-core-1.3.jar```and ```junit-4.13.2.jar```.
 
 <br>
 
