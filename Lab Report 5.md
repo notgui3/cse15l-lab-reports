@@ -26,6 +26,9 @@ At line 28, there is an if conditional that tries to compare two elements in two
 
 4. <br>
 The majority of the file structure and contents of each file are from here: (https://github.com/ucsd-cse15l-s23/lab7)[https://github.com/ucsd-cse15l-s23/lab7] <br>
+
+<br>
+
 In one folder called lab7, there should be: <br>
 Two java files named ```ListExamples.java```, and ```ListExamplesTests.java```, <br>
 One folder named lib containing the hamcrest and junit jar files needed to run the tests. <br>
