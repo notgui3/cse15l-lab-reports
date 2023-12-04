@@ -7,24 +7,28 @@
 
 ## **Part 1** 
 
-1. <br>
+1.
+<br>
 ![Image](lab5bug.jpg) <br>
 When I ran ```<bash test.sh ListExamples>``` it gave me two index out-of-bounds errors for the two tests. At first, I was thinking it was an array that was causing the index out of bounds, but there isn't any fixed sized arrays in ListExamples.java.
 
 <br>
 
-2. <br>
+2.
+<br>
 TA: More than just fixed-sized arrays can go out of bounds. Try looking at what code lines the test is giving you in ```ListExamples.java``` (line 28). What is on that line and around that line? Are there any list or array objects present? How and why would the index go out of bounds?
    
 <br>
 
-3. <br>
+3.
+<br>
 ![Image](lab5bugfind.jpg) <br>
 At line 28, there is an if conditional that tries to compare two elements in two list objects, ```list1``` and ```list2```, and uses the index1 and index2 variables to try to access them. The ```index1``` and ```index2``` variables are being incremented, and it could be going out of bounds because ```index1``` or ```index2``` is getting too large. The if and while conditionals that control the incrementation of ```index1``` and ```index2``` seems to be correct. However, the outside while conditional seems to be wrong. It is ```while(index1 < list1.size() ||  index2 < list2.size()) ```, meaning that even if one of ```index1``` or ```index2``` is larger than the size of ```list1``` or ```list2```, respectively, as long as the other index is smaller than their respective list, it will keep running and it will over increment an index, making larger than its respective list's size and creating an index out of bounds error when they compare at the if conditional at line 28. I fixed the bug by replacing the ```||```, or statement, with a ```&&```, and statement, to make it like this ```while(index1 < list1.size() &&  index2 < list2.size()) ```. The code now works because both indexes must be smaller than their respective list's size for the while loop to run, so there won't be any index out of bounds errors when comparing at line 28 anymore.
 
 <br>
 
-4. <br>
+4.
+<br>
 The majority of the file structure and contents of each file are from here: (https://github.com/ucsd-cse15l-s23/lab7)[https://github.com/ucsd-cse15l-s23/lab7] <br>
 
 <br>
