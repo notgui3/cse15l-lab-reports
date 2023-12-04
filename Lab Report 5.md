@@ -14,7 +14,7 @@ When I ran ```<bash test.sh ListExamples>``` it gave me two index out-of-bounds 
 <br>
 
 2. <br>
-More than just fixed-sized arrays can go out of bounds. Try looking at what code lines the test is giving you in ```ListExamples.java``` (line 28). What is on that line and around that line? Are there any list or array objects present? How and why would the index go out of bounds?
+TA: More than just fixed-sized arrays can go out of bounds. Try looking at what code lines the test is giving you in ```ListExamples.java``` (line 28). What is on that line and around that line? Are there any list or array objects present? How and why would the index go out of bounds?
    
 <br>
 
