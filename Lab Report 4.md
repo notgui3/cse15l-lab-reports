@@ -67,7 +67,7 @@ Step 8. ```<up>``` + ```<up>``` + ```<enter>``` <br>
 Step 9. ```<git add ListExamples.java>``` + ```<enter>``` + ```<git commit>``` + ```<i>``` + ```<bug fix>``` + ```<escape>``` + ```<:wq>``` + ```<git push>``` + ```<enter>``` <br>
 <br>
     I ```<git add ListExamples.java>``` to add it to the files that will be updated.
-    Then put in ```<git commit>``` and press ```<i>``` to edit it with ```<bug fix>```, and then press ```<escape>``` to get to normal mode and type ```<:wq>``` to save and quit.
+    Then put in ```<git commit>``` and pressed ```<i>``` to edit it with ```<bug fix>```, and then pressed ```<escape>``` to get to normal mode and type ```<:wq>``` to save and quit.
     Then I typed ```<git push>``` and pressed ```<enter>``` to push my update of ListExamples.java.
 
 
