@@ -101,6 +101,7 @@ public class ListExamplesTests {
 <br>
 
 In test.sh, it should have these two commands: <br>
+
 ```
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
